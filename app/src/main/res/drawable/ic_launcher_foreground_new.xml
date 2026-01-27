@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Glow effect layer (outer) -->
+    <path
+        android:fillColor="#8B84FF"
+        android:fillAlpha="0.3"
+        android:pathData="M54,24 C40,24 28,36 28,50 L28,58 C28,72 40,84 54,84 L62,84 L70,92 L70,84 C84,84 96,72 96,58 L96,50 C96,36 84,24 70,24 Z"/>
+    
+    <!-- Main chat bubble with robot features -->
+    <path
+        android:fillColor="#6C63FF"
+        android:pathData="M54,28 C42,28 32,38 32,50 L32,58 C32,70 42,80 54,80 L60,80 L66,86 L66,80 C78,80 88,70 88,58 L88,50 C88,38 78,28 66,28 Z"/>
+    
+    <!-- Robot antenna (top) -->
+    <path
+        android:fillColor="#8B84FF"
+        android:pathData="M60,22 L60,28 M57,22 C57,20.3 58.3,19 60,19 C61.7,19 63,20.3 63,22 C63,23.7 61.7,25 60,25 C58.3,25 57,23.7 57,22 Z"/>
+    
+    <!-- Robot eyes (two dots) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,48 C48,45.8 49.8,44 52,44 C54.2,44 56,45.8 56,48 C56,50.2 54.2,52 52,52 C49.8,52 48,50.2 48,48 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,48 C64,45.8 65.8,44 68,44 C70.2,44 72,45.8 72,48 C72,50.2 70.2,52 68,52 C65.8,52 64,50.2 64,48 Z"/>
+    
+    <!-- Robot smile (curved line) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M48,62 Q60,68 72,62"/>
+    
+    <!-- Circuit pattern detail (small lines on bubble) -->
+    <path
+        android:strokeColor="#8B84FF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M38,54 L42,54 M42,54 L42,58 M78,54 L82,54 M82,54 L82,50"/>
+</vector>

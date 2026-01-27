@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Header with Title and Status Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VK Bot KirDev"
+            android:textSize="32sp"
+            android:textColor="@color/text_high"
+            android:fontFamily="sans-serif-black"
+            android:gravity="start" />
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/tv_status_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_chip_background"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp"
+            android:text="● Остановлен"
+            android:textColor="@color/text_high"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:elevation="2dp"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+    
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="by KirDev"
+        android:textSize="14sp"
+        android:textColor="@color/violet_primary"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="start"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Поле для токена -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Токен группы VK"
+        android:textSize="16sp"
+        android:textColor="@color/text_high"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_bot_token"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Введите токен группы VK"
+        android:textColor="@color/text_high"
+        android:textColorHint="@color/text_medium"
+        android:inputType="textPassword"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:paddingHorizontal="16dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка сохранить токен (Material Design) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_token"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Сохранить токен"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/violet_primary"
+        app:rippleColor="@color/violet_accent"
+        app:strokeWidth="0dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка запуска бота (Material Design) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start_stop"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Запустить бота"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        app:cornerRadius="12dp"
+        app:backgroundTint="@color/violet_primary"
+        app:rippleColor="@color/violet_accent"
+        app:strokeWidth="0dp"
+        app:icon="@drawable/ic_play"
+        app:iconTint="@color/white"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Описание с иконками (Material Design) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="@color/bg_card"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/violet_primary"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Заголовок секции -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_notification"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Информация"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+
+            <!-- Пункт 1: Автоматическое общение -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_reconnect"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Автоматическое общение в группах VK"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+            <!-- Пункт 2: Умные ответы -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_command"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Умные ответы на вопросы пользователей"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+            <!-- Пункт 3: База данных -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_log"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="База данных: /storage/emulated/0/KirDev_Bot/"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+            <!-- Пункт 4: Редактирование -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_swipe"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Редактируйте answer.bin (UTF-8) для изменения ответов"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+            <!-- Пункт 5: Формат -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_clear"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Формат: ВОПРОС|ОТВЕТ (по одной строке)"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+            <!-- Пункт 6: Токен -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_api"
+                    android:tint="@color/violet_primary"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Для работы требуется токен группы VK с правами на сообщения"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_medium"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+
+</ScrollView>

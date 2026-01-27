@@ -1,0 +1,59 @@
+> Task :app:clean
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResValues FROM-CACHE
+> Task :app:generateDebugResources FROM-CACHE
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:dataBindingGenBaseClassesDebug FROM-CACHE
+> Task :app:generateDebugBuildConfig FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:checkDebugAarMetadata
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:mergeDebugStartupProfile UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :app:mergeLibDexDebug FROM-CACHE
+
+> Task :app:compileDebugKotlin
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/AnswersEditorFragment.kt:69:31 'onBackPressed(): Unit' is deprecated. Deprecated in Java
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/AnswersEditorFragment.kt:83:40 Parameter 'enabled' is never used, could be renamed to _
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/AnswersEditorFragment.kt:374:21 Name shadowed: attachmentsStr
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/BotService.kt:363:9 'stopForeground(Boolean): Unit' is deprecated. Deprecated in Java
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/MainActivity.kt:168:13 Duplicate label in when
+w: file:///D:/Site/Bot_VK_Mobile/app/src/main/java/com/vkbot/manager/MainFragment.kt:190:33 'getRunningServices(Int): (Mutable)List<ActivityManager.RunningServiceInfo!>!' is deprecated. Deprecated in Java
+
+> Task :app:compileDebugJavaWithJavac FROM-CACHE
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics FROM-CACHE
+> Task :app:processDebugJavaRes
+> Task :app:mergeProjectDexDebug
+> Task :app:mergeDebugJavaResource
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 5s
+40 actionable tasks: 20 executed, 19 from cache, 1 up-to-date

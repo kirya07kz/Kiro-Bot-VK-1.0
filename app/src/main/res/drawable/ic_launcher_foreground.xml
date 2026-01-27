@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Используем логотип как foreground -->
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M34,44h40v20h-40z"/>
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M38,48h8v4h-8z"/>
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M50,48h8v4h-8z"/>
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M62,48h8v4h-8z"/>
+        <path
+            android:fillColor="#6366F1"
+            android:pathData="M38,56h32v4h-32z"/>
+    </group>
+</vector>

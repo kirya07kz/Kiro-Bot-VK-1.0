@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Нажатое состояние -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/violet_darker" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    
+    <!-- Обычное состояние -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/violet_deepest" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+    
+</selector>

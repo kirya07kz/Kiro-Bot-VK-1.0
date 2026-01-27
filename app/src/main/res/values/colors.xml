@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Target Design Colors (from screenshot) -->
+    <color name="bg_main">#0D0D0F</color>
+    <color name="bg_card">#1C1E2B</color>
+    <color name="bg_card_highlight">#252836</color>
+    
+    <!-- Primary Purple (Bright button color from screenshot) -->
+    <color name="violet_primary">#6C63FF</color>
+    <color name="violet_dark">#5A52D5</color>
+    <color name="violet_darker">#4842B8</color>
+    <color name="violet_deepest">#6C63FF</color>
+    <color name="violet_accent">#8B84FF</color>
+    
+    <!-- Secondary Colors -->
+    <color name="cyan_primary">#6C63FF</color>
+    <color name="cyan_dark">#5A52D5</color>
+    
+    <!-- Tertiary -->
+    <color name="tertiary_primary">#6C63FF</color>
+    <color name="tertiary_dark">#5A52D5</color>
+    
+    <!-- Text Colors (All white/light grey) -->
+    <color name="text_high">#FFFFFF</color>
+    <color name="text_medium">#A0A3BD</color>
+    <color name="text_low">#6E7191</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="accent_info">#6C63FF</color>
+    <color name="accent_warning">#FFB74D</color>
+    <color name="accent_error">#FF6B9D</color>
+    <color name="accent_success">#4CAF50</color>
+    <color name="status_running_green">#2E7D32</color>
+    <color name="status_running_green_light">#4CAF50</color>
+    
+    <!-- Progress Bar Colors -->
+    <color name="progress_bg">#252836</color>
+    <color name="progress_fill">#6C63FF</color>
+    <color name="progress_glow">#8B84FF</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#6C63FF</color>
+    <color name="gradient_end">#8B84FF</color>
+    
+    <!-- Aliases -->
+    <color name="background">@color/bg_main</color>
+    <color name="surface">@color/bg_card</color>
+    <color name="text_primary">@color/text_high</color>
+    <color name="accent">@color/violet_primary</color>
+</resources>

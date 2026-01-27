@@ -1,0 +1,19 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Google Services (если используете Firebase)
+google-services.json
+
+# App specific
+/app/build/
+
+# Project specific artifacts
+release_log.txt
+*.apk
