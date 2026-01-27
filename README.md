@@ -1,18 +1,12 @@
 # VK Bot KirDev 🤖
 *Автономный чат-бот для сообществ ВКонтакте, работающий прямо на Android устройстве. Позволяет управлять ответами и статистикой без написания кода.*
 
-![Главный экран](screenshots/1.jpg)
-
-![Лог](screenshots/2.jpg)
-
-![Статистика](screenshots/3.jpg)
-
-![Редактор](screenshots/4.jpg)
-
-![Импорт](screenshots/5.jpg)
-
-![Добавить ответ](screenshots/6.jpg)
-
+<img src="screenshots/1.jpg" width="400" alt="Главный экран">
+<img src="screenshots/2.jpg" width="400" alt="Лог">
+<img src="screenshots/3.jpg" width="400" alt="Статистика">
+<img src="screenshots/4.jpg" width="400" alt="Редактор">
+<img src="screenshots/5.jpg" width="400" alt="Импорт">
+<img src="screenshots/6.jpg" width="400" alt="Добавить ответ">
 
 ## 🚀 Основные возможности
 
