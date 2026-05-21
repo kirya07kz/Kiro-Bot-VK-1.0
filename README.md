@@ -1,4 +1,4 @@
-# VK Bot KirDev 🤖
+# Kiro Bot VK 1.0 🤖
 *Автономный чат-бот для сообществ ВКонтакте, работающий прямо на Android устройстве. Позволяет управлять ответами и статистикой без написания кода.*
 
 <img src="screenshots/1.jpg" width="400" alt="Главный экран">
@@ -94,29 +94,6 @@
 - Gradle 8.7
 - Android SDK 34
 
-### Команды сборки
-
-```bash
-# Сборка debug версии
-gradlew assembleDebug
-
-# Сборка release версии
-gradlew assembleRelease
-
-# Установка на подключенное устройство
-gradlew installDebug
-
-# Очистка проекта
-gradlew clean
-```
-
-### Скрипты для Windows
-
-```batch
-# Сборка проекта (Debug)
-build_apk.bat
-```
-
 ## 📁 Структура проекта
 
 ```
@@ -196,5 +173,3 @@ app/src/main/
 ---
 
 **Developed by KirDev** 💜
-
-*Если у вас возникли вопросы или предложения, создайте Issue в репозитории.*
